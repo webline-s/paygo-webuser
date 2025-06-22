@@ -133,7 +133,7 @@ const BuyPayId = ({
       case 3:
         return <div className="min-h-screen bg-gray-50">
             <div className="p-6 space-y-6">
-              <div className="text-center">
+              <div className="text-center bg-amber-400">
                 <h2 className="text-xl font-semibold text-gray-800 mb-2">Complete Payment</h2>
                 <p className="text-gray-600 text-sm">Transfer ₦7,250 to the account below</p>
               </div>
@@ -160,13 +160,13 @@ const BuyPayId = ({
 
                 <div className="flex items-center justify-between py-4 border-b border-gray-200">
                   <span className="text-gray-700 font-medium">Bank Name</span>
-                  <span className="text-xl font-bold text-gray-900">Moniepoint MFB</span>
+                  <span className="text-xl font-bold text-gray-900">MONIEPOINT MFB</span>
                 </div>
 
                 <div className="flex items-center justify-between py-4 border-b border-gray-200">
                   <span className="text-gray-700 font-medium">Account Number</span>
                   <div className="flex items-center space-x-3">
-                    <span className="text-xl font-bold text-gray-900">8105415222</span>
+                    <span className="text-xl font-bold text-gray-900">6063838007</span>
                     <Button onClick={() => handleCopy('8105415222')} className="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 text-sm rounded-md">
                       Copy
                     </Button>
@@ -175,7 +175,7 @@ const BuyPayId = ({
 
                 <div className="flex items-center justify-between py-4 border-b border-gray-200">
                   <span className="text-gray-700 font-medium">Account Name</span>
-                  <span className="text-xl font-bold text-gray-900">PayGo-Samuel Kelly</span>
+                  <span className="text-xl font-bold text-gray-900">PayGo-ABDULSAMAD OLAWALE NASIRU</span>
                 </div>
               </div>
 
