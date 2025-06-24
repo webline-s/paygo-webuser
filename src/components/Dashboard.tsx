@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, CarouselApi } from '@/components/ui/carousel';
@@ -51,42 +50,42 @@ const Dashboard = () => {
 
   const quickActions = [
     { 
-      icon: <CreditCard className="w-8 h-8 text-purple-600" />, 
+      icon: <div className="w-6 h-6 bg-yellow-500 rounded flex items-center justify-center text-xs">💳</div>, 
       label: "Buy PAY ID",
       action: () => setCurrentView('buy-pay-id')
     },
     { 
-      icon: <div className="w-8 h-8 bg-gray-600 rounded"></div>, 
+      icon: <div className="w-6 h-6 bg-blue-500 rounded flex items-center justify-center text-xs">📺</div>, 
       label: "Watch",
       action: () => window.open('https://bluepay-28.vercel.app', '_blank')
     },
     { 
-      icon: <BarChart3 className="w-8 h-8 text-blue-600" />, 
+      icon: <div className="w-6 h-6 bg-green-500 rounded flex items-center justify-center text-xs">📊</div>, 
       label: "Airtime",
       action: () => setCurrentView('airtime')
     },
     { 
-      icon: <Database className="w-8 h-8 text-red-600" />, 
+      icon: <div className="w-6 h-6 bg-purple-500 rounded flex items-center justify-center text-xs">💾</div>, 
       label: "Data",
       action: () => setCurrentView('data')
     },
     { 
-      icon: <Headphones className="w-8 h-8 text-gray-600" />, 
+      icon: <Headphones className="w-6 h-6 text-gray-700" />, 
       label: "Support",
       action: () => setCurrentView('support')
     },
     { 
-      icon: <Globe className="w-8 h-8 text-blue-500" />, 
+      icon: <Globe className="w-6 h-6 text-blue-600" />, 
       label: "Group",
       action: () => setCurrentView('join-communities')
     },
     { 
-      icon: <DollarSign className="w-8 h-8 text-yellow-600" />, 
+      icon: <div className="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center text-xs">💰</div>, 
       label: "Earn More",
       action: () => setCurrentView('earn-more')
     },
     { 
-      icon: <User className="w-8 h-8 text-gray-600" />, 
+      icon: <User className="w-6 h-6 text-gray-700" />, 
       label: "Profile",
       action: () => setCurrentView('profile')
     }
@@ -260,16 +259,16 @@ const Dashboard = () => {
 
       {/* Quick Actions */}
       <div className="p-6">
-        <div className="grid grid-cols-4 gap-4 mb-8">
+        <div className="grid grid-cols-4 gap-3 mb-8">
           {quickActions.map((action, index) => (
             <div key={index} className="text-center">
               <button 
                 onClick={action.action}
-                className="bg-white rounded-2xl p-4 shadow-sm hover:shadow-md transition-shadow mb-2 w-full"
+                className="bg-white rounded-xl p-3 shadow-sm hover:shadow-md transition-shadow mb-2 w-full h-16 flex items-center justify-center"
               >
                 {action.icon}
               </button>
-              <p className="text-xs text-gray-600">{action.label}</p>
+              <p className="text-xs text-gray-600 font-medium">{action.label}</p>
             </div>
           ))}
         </div>
