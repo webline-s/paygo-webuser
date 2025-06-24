@@ -1,5 +1,6 @@
+
 import { Button } from '@/components/ui/button';
-import { Gift, X } from 'lucide-react';
+import { Gift, X, Share } from 'lucide-react';
 
 const ReferEarnPopup = ({ onClose }: { onClose: () => void }) => {
   const handleShareOnWhatsApp = () => {
@@ -13,7 +14,7 @@ const ReferEarnPopup = ({ onClose }: { onClose: () => void }) => {
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50">
       <div className="bg-white rounded-2xl max-w-sm w-full overflow-hidden shadow-2xl">
         {/* Header with close button */}
-        <div className="relative bg-purple-600 p-4">
+        <div className="relative bg-gradient-to-r from-purple-600 to-purple-700 p-4">
           <Button 
             onClick={onClose}
             className="absolute top-3 right-3 p-2 bg-transparent hover:bg-white/10 text-white"
@@ -21,11 +22,7 @@ const ReferEarnPopup = ({ onClose }: { onClose: () => void }) => {
             <X className="w-5 h-5" />
           </Button>
           <div className="flex items-center space-x-3 text-white">
-            <div className="w-8 h-8 flex items-center justify-center">
-              <div className="w-6 h-6 bg-white rounded flex items-center justify-center">
-                <span className="text-purple-600 text-xs">⚡</span>
-              </div>
-            </div>
+            <Share className="w-6 h-6" />
             <span className="text-lg font-medium">Refer & Earn</span>
           </div>
         </div>
@@ -38,7 +35,7 @@ const ReferEarnPopup = ({ onClose }: { onClose: () => void }) => {
             </div>
           </div>
           
-          <h3 className="text-2xl font-bold text-gray-800 mb-3">
+          <h3 className="text-xl font-bold text-gray-800 mb-3">
             Earn ₦5,000!
           </h3>
           
@@ -48,7 +45,7 @@ const ReferEarnPopup = ({ onClose }: { onClose: () => void }) => {
 
           <Button
             onClick={handleShareOnWhatsApp}
-            className="w-full bg-green-500 hover:bg-green-600 text-white py-4 text-lg font-medium rounded-lg mb-4"
+            className="w-full bg-green-500 hover:bg-green-600 text-white py-3 text-base font-medium rounded-xl mb-4"
           >
             <div className="flex items-center justify-center space-x-2">
               <span>📱</span>
@@ -56,7 +53,7 @@ const ReferEarnPopup = ({ onClose }: { onClose: () => void }) => {
             </div>
           </Button>
 
-          <p className="text-gray-500 text-sm">
+          <p className="text-gray-500 text-xs">
             Start earning and save on PAY ID costs today!
           </p>
         </div>
