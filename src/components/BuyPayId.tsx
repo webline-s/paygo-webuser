@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Copy, X } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
+
 const BuyPayId = ({
   onBack
 }: {
@@ -68,15 +69,15 @@ const BuyPayId = ({
           </Button>
         </div>
         
-        <div className="border-l-4 border-orange-400 p-4 mb-4 bg-yellow-200">
+        <div className="border-l-4 border-green-400 p-4 mb-4 bg-green-50">
           <div className="flex items-center space-x-2 mb-2">
-            <span className="text-orange-600"></span>
-            <h4 className="font-bold text-green-600">Opay Bank Service is safe</h4>
+            <span className="text-green-600">✓</span>
+            <h4 className="font-bold text-green-600">Opay Bank Service is Working Perfectly</h4>
           </div>
-          <p className="text-sm text-green-600">Kindly make your payment to get your PAYID </p>
+          <p className="text-sm text-green-600">All Opay bank transfers are now working normally. You can proceed with your payment safely.</p>
         </div>
         
-        <p className="text-gray-600 text-sm mb-6">We apologize for any inconvenience. All banks are now working normally and your payment will be processed immediately.</p>
+        <p className="text-gray-600 text-sm mb-6">We appreciate your patience. All banks including Opay are now working normally and your payment will be processed immediately.</p>
         
         <Button onClick={handleServiceNoticeClose} className="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 rounded-lg">
           I Understand
@@ -256,4 +257,5 @@ const BuyPayId = ({
       {showServiceNotice && renderServiceNotice()}
     </div>;
 };
+
 export default BuyPayId;
