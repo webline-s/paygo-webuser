@@ -15,7 +15,7 @@ const PaymentForm = ({ formData, onFormDataChange, onSubmit }: PaymentFormProps)
       <div className="space-y-2">
         <label className="text-gray-700 font-medium">Amount</label>
         <div className="bg-gray-100 p-4 rounded-lg">
-          <span className="text-2xl font-bold">₦7,250</span>
+          <span className="text-2xl font-bold">₦6,500</span>
         </div>
       </div>
 

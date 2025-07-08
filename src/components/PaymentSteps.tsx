@@ -44,7 +44,7 @@ const PaymentSteps = ({
             <div className="p-6 space-y-6">
               <div className="text-center bg-amber-400">
                 <h2 className="text-xl font-semibold text-gray-800 mb-2">Complete Payment</h2>
-                <p className="text-gray-600 text-sm">Transfer ₦7,250 to the account below</p>
+                <p className="text-gray-600 text-sm">Transfer ₦6,500 to the account below</p>
               </div>
 
               {/* Email Section */}
@@ -60,8 +60,8 @@ const PaymentSteps = ({
                 <div className="flex items-center justify-between py-4 border-b border-gray-200">
                   <span className="text-gray-700 font-medium">Amount</span>
                   <div className="flex items-center space-x-3">
-                    <span className="text-xl font-bold text-gray-900">₦7,250</span>
-                    <Button onClick={() => onCopy('7250')} className="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 text-sm rounded-md">
+                    <span className="text-xl font-bold text-gray-900">₦6,500</span>
+                    <Button onClick={() => onCopy('6500')} className="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 text-sm rounded-md">
                       Copy
                     </Button>
                   </div>
